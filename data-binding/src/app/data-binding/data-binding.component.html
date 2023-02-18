@@ -1,3 +1,4 @@
+<h4>#Aula 09 - Output Properties</h4>
 <section class="property-binding">
 
     <article>
@@ -14,10 +15,16 @@
         <img [src]="urlImagem">
         <img bind-src="urlImagem">
 
-
     </article>
 
+</section>
+
+<br><br>
+
+<h4>#Aula 10 - Output Properties</h4>
+<section>
     <article>
+
         <h3>Class e Style Binding</h3>
         <div>
             Selecione uma classe:
@@ -53,14 +60,17 @@
                 [style.display]="classe.value == 'alert-danger' ? 'block' : 'none'">
                 Esse texto somente aparece em caso de erro.
             </div>
-
         </div>
+
     </article>
 </section>
 
-<section class="event-binding">
+<br><br>
 
+<h4>#Aula 11 - Output Properties</h4>
+<section class="event-binding">
     <article>
+
         <h3>Event binding</h3>
         <div>
             <button (click)="botaoClicado()"
@@ -91,26 +101,26 @@
         </div>
 
     </article>
-
 </section>
 
 <br><br>
 
+<h4>#Aula 12 - Output Properties</h4>
 <app-meu-form></app-meu-form>
 
 <br><br>
 
+<h4>#Aula 13 - Input Properties</h4>
 <section class="input-output-properties">
-
     <article>
+
         <h3>Input/Output Properties</h3>
-
         <app-curso [nome]="nomeDoCurso"></app-curso>
+        
     </article>
-
 </section>
 
 <br><br>
 
-<contador [valor]="valorInicial"
-    mudouValor="onMudouValor($event)"></contador>
+<h4>#Aula 14 - Output Properties</h4>
+<contador [valor]="valorInicial" mudouValor="onMudouValor($event)"></contador>
