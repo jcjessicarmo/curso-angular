@@ -9,15 +9,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'data-binding';
   
-  valor: number = 5;
+    valor: number = 6;
+    
+    deletarCiclo: boolean = false;
 
-  deletarCiclo: boolean = false;
+    mudarValor(){
+      this.valor++;
+    }
 
-  mudarValor(){
-    this.valor++;
-  }
-
-  destruirClico(){
-    this.deletarCiclo = true;
-  }
+    destruirClico(){
+      this.deletarCiclo = true;
+    }
 }
