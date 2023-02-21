@@ -5,11 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './diretiva-ngif.component.html',
   styleUrls: ['./diretiva-ngif.component.css']
 })
-export class DiretivaNgifComponent implements OnInit {
+export class DiretivaNgifComponent {
 
   constructor() { }
-
-  ngOnInit() {
-  }
 
 }
