@@ -5,3 +5,20 @@
 <p appHighlightMouse>Texto com o hightlight quando passo o mouse.</p>
 
 <p appHighlightDirective="red" defaultColor="gray">Texto com hightlight com cores customizadas.</p>
+
+<h5>Diretiva Estrutura customizada - ngElse</h5>
+<div *ngIf="mostrarCursos" >
+  Lista de cursos aqui.
+</div>
+<div *ngElse="mostrarCursos" >
+  Não existem cursos para serem listados.
+</div>
+<br>
+<button (click)="onMostrarCursos()">Mostrar ou esconder cursos</button>
+
+<!-- Para Angular v4+, usar <ng-template></ng-template> no lugar de <template></template> -->
+<ng-template [ngElse]="mostrarCursos">
+    <div>
+      Não existem cursos para serem listados.
+    </div>
+  </ng-template>
