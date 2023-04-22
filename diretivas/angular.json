@@ -115,6 +115,7 @@
   },
   "defaultProject": "diretivas",
   "cli": {
+    "analytics": "8b000fb9-fd49-44c0-a041-e4625d47df47",
     "defaultCollection": "@angular-eslint/schematics"
   }
 }
